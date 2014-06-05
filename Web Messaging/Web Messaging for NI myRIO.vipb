@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-05-28 16:52:41" Modified_Date="2014-06-04 23:14:41" Creator="clarson" Comments="" ID="ef16020c29a56351fbd0a41167dcffc7">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-05-28 16:52:41" Modified_Date="2014-06-05 14:46:11" Creator="clarson" Comments="" ID="35e1439dede0fef81641e7cb81eb9f66">
   <Library_General_Settings>
-    <Package_File_Name>Chris_Larson_lib_Web_Messaging_Sample_Project</Package_File_Name>
-    <Library_Version>1.0.0.7</Library_Version>
+    <Package_File_Name>Chris_Larson_lib_Web_Messaging</Package_File_Name>
+    <Library_Version>1.0.0.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -40,10 +40,10 @@ Running This Application:
 1. Sign up for an account at http://myRIO.niwsc.com
 2. On the My account page of the website click on the Services token tab and generate a new Services token
 3. Copy your Services token so that it can be pasted in Desktop Main.vi, opened in the next step.
-4. In the Project Explorer window, open Desktop Main.vi.
+4. In the Project Explorer window, open Desktop Main.vi and RT Main.vi.
 5. Paste your Services token in the Services token front panel control of Desktop Main.vi and RT Main.vi.
 6. Click Run for Desktop Main.vi, then click run for RT Main.vi. On RT Main.vi click the Run Test push-button. The myRIO will publish a series of messages and errors. The messages and errors will be displayed on the Web Messaging site and in Desktop Main.vi.
-7. Click Stop to stop the application.  This will stop Desktop Main.vi.</Description>
+7. Click Stop to stop the application. This will stop Desktop Main.vi.</Description>
       <Copyright/>
       <Packager>Chris Larson</Packager>
       <URL>http://myrio.niwsc.com</URL>
@@ -124,20 +124,14 @@ Running This Application:
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>Source/myRIO/myRIO Web App/myRIO v1.1/SubVIs</Path>
+        <Path>Web Messaging Palette</Path>
         <Destination>0</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>Source/myRIO/myRIO Web App/myRIO v1.1/documentation/Web Messaging.txt</Path>
+        <Path>Web Messaging Palette/Web Messaging.vi</Path>
         <Destination>8</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>Source/myRIO/myRIO Web App/myRIO v1.1/documentation/Web Messaging.vi</Path>
-        <Destination>4</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
@@ -152,7 +146,7 @@ Running This Application:
         <Namespace/>
       </Namespace_Overrides>
     </Source_Files>
-    <License_Agreement_Filepath>Source\myRIO\myRIO Web App\myRIO v1.1\documentation\software_license_agreement.txt</License_Agreement_Filepath>
+    <License_Agreement_Filepath>Source\myRIO\Web Messaging\myRIO v1.1\documentation\software_license_agreement.txt</License_Agreement_Filepath>
     <Licensing_and_Activation>
       <License_LF_file_path/>
       <Licensed_library_file_path/>
@@ -247,7 +241,7 @@ Running This Application:
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Open.vi</Path>
+        <Path>Web Messaging Palette\Open.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -261,7 +255,7 @@ Running This Application:
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Close.vi</Path>
+        <Path>Web Messaging Palette\Close.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -275,7 +269,7 @@ Running This Application:
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Post Error.vi</Path>
+        <Path>Web Messaging Palette\Post Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -289,7 +283,7 @@ Running This Application:
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Post Message.vi</Path>
+        <Path>Web Messaging Palette\Post Message.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -303,7 +297,7 @@ Running This Application:
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Get Errors.vi</Path>
+        <Path>Web Messaging Palette\Get Errors.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -317,10 +311,10 @@ Running This Application:
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>Source\myRIO\myRIO Web App\myRIO v1.1\SubVIs\Get Messages.vi</Path>
+        <Path>Web Messaging Palette\Get Messages.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0F1F8CB77F3CD06FBFE6B1521717876F</GUID>
+      <GUID>C51632A85E830D0068B03E55E2C217F2</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -4,10 +4,10 @@
   <Description localize="yes">Creates a new project for using the Web Messaging for NI myRIO web app, http://myrio.niwsc.com</Description>
   <Filters localize="yes">Sample Projects:myRIO</Filters>
   <Keywords localize="yes">myRIO</Keywords>
-  <LocationPath>myRIO/myRIO Web App</LocationPath>
-  <ProjectPath>myRIO v1.1/myRIO Web App.lvproj</ProjectPath>>
+  <LocationPath>myRIO/Web Messaging</LocationPath>
+  <ProjectPath>myRIO v1.1/Web Messaging.lvproj</ProjectPath>>
   <ListboxImagePath>images/logo.png</ListboxImagePath>
-  <DocumentationPath>myRIO v1.1/documentation/How to use the myRIO Web App.html</DocumentationPath>
+  <DocumentationPath>myRIO v1.1/documentation/How to use Web Messaging.html</DocumentationPath>
   <MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
   <CustomVIMode>AfterPage2NoUI</CustomVIMode>
   <CustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</CustomVIPath>
