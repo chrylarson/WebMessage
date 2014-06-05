@@ -11,7 +11,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="READ ME - Instructions to Run App" Type="Folder">
-			<Item Name="How to use the myRIO Web App.html" Type="Document" URL="../documentation/How to use the myRIO Web App.html"/>
+			<Item Name="How to use Web Messaging.html" Type="Document" URL="../documentation/How to use Web Messaging.html"/>
+			<Item Name="software_license_agreement.txt" Type="Document" URL="../documentation/software_license_agreement.txt"/>
 		</Item>
 		<Item Name="Desktop Main.vi" Type="VI" URL="../Desktop Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -85,7 +86,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -1584,7 +1585,6 @@ AddOutputFilter chunkFilter
 					<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
 				</Item>
 				<Item Name="Dependencies" Type="Dependencies">
-					<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 					<Item Name="niFpgaCriticalErrorInLSC.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaCriticalErrorInLSC.vi"/>
 					<Item Name="niFpgaEmulationReportErrorSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationReportErrorSimple.vi"/>
 					<Item Name="niFpgaEmulationVisToLoad.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationVisToLoad.vi"/>
@@ -1596,6 +1596,7 @@ AddOutputFilter chunkFilter
 					<Item Name="niFpgaProcessEmulError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaProcessEmulError.vi"/>
 					<Item Name="niFpgaSctlEmulationGetInTimedLoop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaSctlEmulationGetInTimedLoop.vi"/>
 					<Item Name="niFpgaSetErrorForExecOnDevCompSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaSetErrorForExecOnDevCompSimple.vi"/>
+					<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 					<Item Name="nirviCleanSpecificError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/nirviCleanSpecificError.vi"/>
 					<Item Name="nirviEmuReportErrorAndStop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuReportErrorAndStop.vi"/>
 					<Item Name="nirvififoEmulationCreateLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirvififoEmulationCreateLock.vi"/>
@@ -1712,50 +1713,6 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Web Messaging API.lvlib" Type="Library" URL="../../../../../Web Messaging Palette/Web Messaging API.lvlib"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{B7834FA8-1976-44C5-858B-3E48F0B1027F}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{5747A9E2-F114-413B-A6D6-B5F1AD3ED6DF}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{52AE4995-4D2C-4E3E-9960-09DEF6FDD817}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">My Real-Time Application</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/My Real-Time Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{A124AC66-8AF0-4D82-800F-DD129093EBEC}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{02656C00-0B55-48A9-BDDF-C5A583C88D21}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-Web-App/RT Main.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">My Real-Time Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">My Real-Time Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">My Real-Time Application</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{BF21C2B1-4741-408D-9B39-92464BF6B742}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
