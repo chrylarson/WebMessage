@@ -2,7 +2,7 @@
 <html>
 <head>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
-<title>myRIO Web App</title>
+<title>Web Messaging for NI myRIO</title>
 <style>
 
 <!--
@@ -386,9 +386,9 @@ function WWW(url)
 </HEAD>
 <body>
 
-<h1>myRIO Web App</h1>
+<h1>Web Messaging for NI myRIO</h1>
 
-<p class="Body">The myRIO Web App example demonstrates the messaging and monitoring capabilities of the myRIO Web App. A myRIO Web App account is required to run this demo. Sign up for an account at <a href="http://myrio.niwsc.com">http://myRIO.niwsc.com</a></p>
+<p class="Body">The Web Messaging for NI myRIO sample project demonstrates the messaging and monitoring capabilities of the Web Messaging service. A Web Messaging account is required to run this demo. Sign up for an account at <a href="http://myrio.niwsc.com">http://myRIO.niwsc.com</a></p>
 
 <h2>Running This Application</h2>
 <ol>
@@ -397,7 +397,7 @@ function WWW(url)
 	<li>Copy your Services token so that it can be pasted in <span class="Monospace">Desktop Main.vi</span>, opened in the next step.</li>
 	<li>In the <strong>Project Explorer</strong> window, open <span class="Monospace">Desktop Main.vi</span>.</li>
 	<li>Paste your Services token in the Services token front panel control of <span class="Monospace">Desktop Main.vi</span>.</li>
-	<li>Click <strong>Run</strong> for <span class="Monospace">Desktop Main.vi</span>. This application publishes a message to your message list at <a href="http://myrio.niwsc.com">http://myRIO.niwsc.com</a> at the start of execution, then publishes five errors, and finishes by publishing a final message.</li>
+	<li>Click <strong>Run</strong> for <span class="Monospace">Desktop Main.vi</span>, then click <strong>Run</strong> for <span class="Monospace">RT Main.vi</span>. On the front panel for <span class="Monospace">RT Main.vi</span> click <strong>Run Test</strong> to start publishing messages and errors to the Web Messaging service. This application publishes a message to your message list at <a href="http://myrio.niwsc.com">http://myRIO.niwsc.com</a> at the start of execution, then publishes five errors, and finishes by publishing a final message. <span class="Monospace">Desktop Main.vi</span> will poll the Web Messaging service for messages and errors and display them in a cluster array.</li>
 	<li>Click <strong>Stop</strong> to stop the application.  This will stop <span class="Monospace">Desktop Main.vi</span>.</li>
 </ol>
 
@@ -414,26 +414,28 @@ function WWW(url)
 <li>NI myRIO 1950</li>
 </ul>
 
-<h2>Getting Support for myRIO Web App</h2>
+<h2>Getting Support for Web Messaging for NI myRIO</h2>
 
-<p class="Body">The myRIO Web App is provided free and open source.  As such, it is not supported explicitly.  For support running this application, post to the <a href="http://forums.ni.com/t5/Academic-Hardware-Products-ELVIS/bd-p/10" target="_blank">NI myRIO Forums</a> or visit <a href="http://sine.ni.com/psp/app/doc/p/id/psp-1166/lang/en" target="_blank">NI myRIO Support</a>.</p>
+<p class="Body">The Web Messaging for NI myRIO is provided free and open source.  As such, it is not supported explicitly.  For support running this application, post to the <a href="http://forums.ni.com/t5/Academic-Hardware-Products-ELVIS/bd-p/10" target="_blank">NI myRIO Forums</a> or visit <a href="http://sine.ni.com/psp/app/doc/p/id/psp-1166/lang/en" target="_blank">NI myRIO Support</a>.</p>
 
 <h2>Overview</h2>
 <p class="Body">This template uses a Flat Sequence structure that executes the following three frames from left to right:</p>
 <ol>
-<li><strong>Starting</strong>&#8212;Starting posts a message to the myRIO Web App with a timestamp of when the demo started.</li>
-<li><strong>Monitor Errors</strong>&#8212;Runs a For Loop and posts simulated LabVIEW errors to the myRIO Web App. The <strong>Errors</strong> list on the myRIO Web App will update as the errors are posted.</li>
-<li><strong>Stopping</strong>&#8212;Stopping posts a message to the myRIO Web App with a timestamp of when the demo completed.</li>
+<li><strong>Starting</strong>&#8212;Starting posts a message to the Web Messaging for NI myRIO with a timestamp of when the demo started.</li>
+<li><strong>Monitor Errors</strong>&#8212;Runs a For Loop and posts simulated LabVIEW errors to the Web Messaging for NI myRIO. The <strong>Errors</strong> list on the Web Messaging for NI myRIO will update as the errors are posted.</li>
+<li><strong>Stopping</strong>&#8212;Stopping posts a message to the Web Messaging for NI myRIO with a timestamp of when the demo completed.</li>
 </ol>
 
 
 
 <a name="error_handling"></a><h3>Modifying Error Handling</h3>
-<p class="Body">By default, this template stops when the For Loop completes or when you click the <strong>Stop</strong> button. When you customize this template, you can use the <strong>error in</strong> and <strong>error out</strong> clusters in each VI you use to pass the error information through the VI. At any point in your program you can use the <span class="Monospace">Post_Error.vi</span> to post the errors to the myRIO Web App.</p>
+<p class="Body">By default, this template stops when the For Loop completes or when you click the <strong>Stop</strong> button. When you customize this template, you can use the <strong>error in</strong> and <strong>error out</strong> clusters in each VI you use to pass the error information through the VI. At any point in your program you can use the <span class="Monospace">Post_Error.vi</span> to post the errors to the Web Messaging for NI myRIO.</p>
 
 <h2>LabVIEW Features and Concepts Used</h2>
 
 <ul>
+	<li><a href="http://zone.ni.com/reference/en-XX/help/373925A-01/myriohelp/myrio_advanced_config/">Installing Software on NI myRIO</a></li>
+	<li><a href="http://zone.ni.com/reference/en-XX/help/373925A-01/myriohelp/myrio_usb_wifi_config/">Connecting NI myRIO to a WiFi Network</a></li>
 	<li><a href="javascript:WWW(L_flat_sequences)">Flat Sequence Structures</a></li>
 	<li><a href="javascript:WWW(L_wait_functions)">Wait Functions</a></li>
 	<li><a href="javascript:WWW(L_for_loops)">For Loops</a></li>
