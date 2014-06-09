@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-05-28 16:52:41" Modified_Date="2014-06-09 09:08:15" Creator="clarson" Comments="" ID="899dc23a8d183fc590cb892e81fc9b0f">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-05-28 16:52:41" Modified_Date="2014-06-09 11:14:22" Creator="clarson" Comments="" ID="3eef951792c0521e09a898f6b935ddb6">
   <Library_General_Settings>
     <Package_File_Name>Chris_Larson_lib_Web_Messaging</Package_File_Name>
-    <Library_Version>1.0.0.13</Library_Version>
+    <Library_Version>1.0.0.14</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -39,7 +39,7 @@ Running This Application:
 
 1. Sign up for an account at http://myRIO.niwsc.com
 2. On the My account page of the website click on the Services token tab and generate a new Services token
-3. Copy your Services token so that it can be pasted in Desktop Main.vi, opened in the next step.
+3. Copy your Services token so that it can be pasted in Desktop Main.vi and RT Main.vi
 4. In the Project Explorer window, open Desktop Main.vi and RT Main.vi.
 5. Paste your Services token in the Services token front panel control of Desktop Main.vi and RT Main.vi.
 6. Click Run for Desktop Main.vi, then click run for RT Main.vi. On RT Main.vi click the Run Test push-button. The myRIO will publish a series of messages and errors. The messages and errors will be displayed on the Web Messaging site and in Desktop Main.vi.
@@ -314,7 +314,7 @@ Running This Application:
         <Path>Web Messaging Palette\Get Messages.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2881FDB7746DC4334EA74D56DE35E3D0</GUID>
+      <GUID>BD00C074E131C40EA2B5185B2022A242</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
